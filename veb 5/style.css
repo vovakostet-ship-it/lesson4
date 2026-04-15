@@ -1,0 +1,284 @@
+@import url('fonts/main_font.css');
+
+* {
+    margin: 0;
+    font-family: 'StratosSkyeng', sans-serif;
+}
+
+.content {
+  background-size: cover;
+    min-height: 100vh;
+    background-color: #96d7e0;
+    padding: 50px 0;
+}
+
+.in-one-line {
+    display: flex;
+    gap: 32px;
+}
+
+.center {
+       max-width: 90%;  /* или 1200px, поиграй */
+    margin: 0 auto;
+    padding: 0 30px;    /* чтоб на узких экранах не прилипало */
+}
+
+
+.main-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.left-col {
+    width: 60%;
+}
+
+.right-col {
+    .right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  /* все дочерние элементы прижмутся к правому краю */
+}
+}
+
+.name-block {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-block {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.nav-btn {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.2s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 200px;        /* ширина */
+    height: 200px;       /* высота, равна ширине — квадрат */
+    display: flex;       /* чтобы центрировать текст */
+    align-items: center; /* по вертикали */
+    justify-content: center; /* по горизонтали */
+    text-align: center;  /* запасной вариант */
+}
+
+.nav-btn:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.name-block, .info-block {
+    font-size: 18px;  /* базовый размер для всего текста внутри */
+}
+
+.name-block h1 {
+    font-size: 2.5em;  /* будет 45px если базовый 18px */
+}
+
+.info-block p {
+    font-size: 1.2em;  /* 21.6px */
+}
+.right-image {
+    margin-top: 20px;   /* отступ от кнопок */
+}
+
+.right-image img {
+    width: 100%;         /* чтобы фото занимало всю ширину колонки */
+    border-radius: 20px; /* как у блоков */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* тень для единства */
+    display: block;      /* чтобы убрать лишний отступ снизу у img */
+}
+
+
+.facts-page .content {
+    background-image: url('11.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    min-height: 100vh;  /* занимает минимум всю высоту окна */
+    /* остальные свойства */
+    /* можно затемнить, чтобы текст читался */
+    position: relative; /* понадобится для кнопки */
+}
+.facts-page h1 {
+    text-align: center;
+    padding-top: 50px; /* отступ сверху */
+    color: rgb(0, 0, 0); /* если фон тёмный */
+    font-size: 48px;
+    position: relative;
+    z-index: 1;
+}
+.facts-container {
+    max-width: 800px;
+    margin: 50px auto; /* центрирование по горизонтали */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.fact-item {
+    background-color: rgba(255, 255, 255, 0.9); /* полупрозрачный белый */
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-size: 18px;
+    color: #333;
+    backdrop-filter: blur(5px); /* если хочешь матовое стекло */
+}
+.home-button-facts {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.home-button-facts:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.quotes-page .content {
+    background-image: url('44.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    min-height: 100vh;  /* занимает минимум всю высоту окна */
+    /* остальные свойства */
+    /* можно затемнить, чтобы текст читался */
+    position: relative; /* понадобится для кнопки */
+}
+.quotes-page h1 {
+    text-align: center;
+    padding-top: 50px; /* отступ сверху */
+    color: rgb(0, 0, 0); /* если фон тёмный */
+    font-size: 48px;
+    position: relative;
+    z-index: 1;
+}
+.quotes-container {
+    max-width: 800px;
+    margin: 50px auto; /* центрирование по горизонтали */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-item {
+    background-color: rgba(255, 255, 255, 0.9); /* полупрозрачный белый */
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-size: 18px;
+    color: #333;
+    backdrop-filter: blur(5px); /* если хочешь матовое стекло */
+}
+.home-button-quotes {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.home-button-quotes:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Страница мемов */
+.memes-page .content {
+    background-color: #98cb92;  /* твой зелёный */
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+.memes-page h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 48px;
+    color: #333;
+}
+
+/* Сетка для мемов */
+.memes-container {
+    display: flex;
+    flex-wrap: wrap;          /* чтобы на узких экранах переносились */
+    justify-content: center;  /* центрируем по горизонтали */
+    gap: 30px;                /* расстояние между картинками */
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Сами картинки */
+.meme-image {
+    width: 300px;             /* фиксированный размер, можно подогнать */
+    height: 300px;
+    object-fit: cover;        /* чтобы не искажались, а обрезались */
+    border: 4px solid white;  /* белая обводка */
+    border-radius: 20px;      /* скругление как у блоков */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.meme-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* Кнопка домой (у тебя уже есть, но проверь) */
+.home-button-memes {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 100;          /* чтобы поверх всего */
+    transition: 0.2s;
+}
+
+.home-button-memes:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
